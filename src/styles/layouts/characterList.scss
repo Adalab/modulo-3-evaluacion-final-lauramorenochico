@@ -1,0 +1,12 @@
+.list {
+    padding: 50px;
+    gap: 20px;
+    background-color: #2F4858;
+    padding-bottom: 200px;
+
+    &__eachCharacter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        list-style: none;
+    }
+}

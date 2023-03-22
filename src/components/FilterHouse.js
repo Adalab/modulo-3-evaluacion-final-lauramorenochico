@@ -1,4 +1,4 @@
-
+import '../styles/layouts/filterHouse.scss';
 
 function FilterHouse({ handleSelectHouse, selectHouse}) {
   const handleChange = (ev) => {
@@ -8,11 +8,11 @@ function FilterHouse({ handleSelectHouse, selectHouse}) {
 
   return (
     <>
-      <label htmlFor="house">
+      <label className="house" htmlFor="house">
         Selecciona la casa:
       </label>
       <select
-        className='select__houses'
+        className='house__text'
         name="house"
         id="house"
         onChange={handleChange}
@@ -22,6 +22,7 @@ function FilterHouse({ handleSelectHouse, selectHouse}) {
         <option value="Slytherin">Slytherin </option>
         <option value="Ravenclaw">Ravenclaw </option>
         <option value="Hufflepuff">Hufflepuff</option>
+        <option value="">Todas las casas</option>
       </select>
     </>
   );

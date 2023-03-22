@@ -1,4 +1,5 @@
 import CharacterCard from './CharacterCard';
+import '../styles/layouts/characterList.scss';
 
 
 function CharacterList({ characterList, searchName }) {
@@ -19,7 +20,7 @@ function CharacterList({ characterList, searchName }) {
   } else {
     return (
       <section className="list">
-        <ul className="eachCharacter">{dataHtml}</ul>
+        <ul className="list__eachCharacter">{dataHtml}</ul>
       </section>
     );
   }

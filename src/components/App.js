@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import getDataApi from '../services/api';
 import '../styles/App.scss';
+import '../styles/layouts/header.scss'
 import CharacterList from './CharacterList';
 import Filters from './Filters';
 import CharacterDetail from './CharacterDetail'; 
+import logo from '../images/logo.png'
 
 
 
@@ -31,7 +33,10 @@ function App() {
     setSelectHouse(value);
   };
 
-
+const handleResetData = () => {
+    setSearchName('');
+    setSelectHouse("Gryffindor");
+  };
 //filtrado por párametros de entrada
   const characterFiltered = characterList.filter((eachCharacter) => {
     return eachCharacter.name.toLowerCase().includes(searchName.toLowerCase());
@@ -53,8 +58,8 @@ function App() {
 
   return(
        <div className='background'>
-        <header>
-          <h1 className='header'>Harry Potter Characters</h1>
+        <header className='header'>
+        <img src={logo} className='header'/>
         </header>
 
         <main className="main">
@@ -64,7 +69,8 @@ function App() {
               <Filters 
               handleSelectHouse={handleSelectHouse}        selectHouse ={selectHouse}          
               handleSearchName={handleSearchName}
-              searchName={searchName} />
+              searchName={searchName} 
+              handleResetData={handleResetData}/>
 
               <CharacterList 
               characterList={characterFiltered} 

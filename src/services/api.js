@@ -10,9 +10,10 @@ const getDataApi = (house) => {
           house: eachCharacter.house,
           image:  eachCharacter.image
               ? eachCharacter.image
-              : `https://via.placeholder.com/180x240/cccccc/000000?text=Harry+Potter+Character`,
+              : `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2ZSJCrmgtfty39MRe6-TWfvtx0XBi2LY-Q&usqp=CAU`,
           alive: eachCharacter.alive,
           gender: eachCharacter.gender,
+          patronus: eachCharacter.patronus,
         };
       });
       return cleanData;

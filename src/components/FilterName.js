@@ -1,7 +1,7 @@
+import '../styles/layouts/filterName.scss';
 
 
-
-function FilterName({ handleSearchName, searchName, error }) {
+function FilterName({ handleSearchName, searchName }) {
   const handleFilter = (ev) => {
     const value = ev.target.value;
     handleSearchName(value);
@@ -9,9 +9,9 @@ function FilterName({ handleSearchName, searchName, error }) {
 
   return (
     <>
-      <label htmlFor="character">Busca por personaje:</label>
+      <label htmlFor="character" className="character">Busca por personaje:
           <input
-            className="form__input-text"
+            className="character__text"
             autoComplete="off"
             type="search"
             name="character"
@@ -19,6 +19,7 @@ function FilterName({ handleSearchName, searchName, error }) {
             value={searchName}
             onChange={handleFilter}
         />
+      </label>
     </> 
   );
 }
