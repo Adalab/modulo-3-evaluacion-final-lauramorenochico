@@ -1,0 +1,12 @@
+.eachCharacter{
+margin: 40px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+list-style: none;
+text-decoration: none;
+
+&__img{
+    width: 180px;
+    height: 250px;
+}
+}
