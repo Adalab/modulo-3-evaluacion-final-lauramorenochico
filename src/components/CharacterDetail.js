@@ -30,7 +30,7 @@ function CharacterDetail({ characterFind }) {
     </section>  
   
 
-     <section className="character__sect2">
+     <section className="character__btn">
       <Link className="character__btn--link" to="/">
         ← Back
       </Link>
@@ -40,8 +40,8 @@ function CharacterDetail({ characterFind }) {
   }else{
     return(
       <>
-      <p className="text__error">El personaje no existe</p>
-      <section className="character__sect2">
+      <p className="text__error">The character does not exist</p>
+      <section className="character__btn">
       <Link className="character__btn--link" to="/">
         ← Back
       </Link>

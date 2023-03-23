@@ -9,9 +9,9 @@ function FilterName({ handleSearchName, searchName }) {
 
   return (
     <>
-      <label htmlFor="character" className="character">Busca por personaje:
+      <label htmlFor="character" className="characterName">Busca por personaje:
           <input
-            className="character__text"
+            className="characterName__text"
             autoComplete="off"
             type="search"
             name="character"

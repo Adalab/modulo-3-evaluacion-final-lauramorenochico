@@ -1,25 +1,26 @@
 
-.house {
-font-size: 3rem;
-font-weight: bold;
-color: whitesmoke;
-padding-left: 40px;
-display: flex;
-flex-direction: row;
-align-items: center;
-display:flex;
-flex-direction: row;
-
+.houseName {
+font-size: 2.8rem;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    margin-top: 50px;
 
 &__text {
-        margin-left: 10px;
+    margin-left: 10px;
         height: 30px;
+        width: 300px;
         border-radius: 5%;
         padding-left: 5px;
-        font-weight: lighter;
         font-size: 2rem;
         background-color: whitesmoke;
-     
+        position: relative;
+        left: 120px;
+        text-decoration: none;
         
     }
 }

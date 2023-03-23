@@ -8,13 +8,13 @@ function FilterHouse({ handleSelectHouse, selectHouse, setSelectHouse}) {
 
   return (
     <>
-      <label className="house" htmlFor="house">
+      <label className="houseName" htmlFor="houseName">
         Selecciona la casa:
-      </label>
+      
       <select
-        className='house__text'
-        name="house"
-        id="house"
+        className='houseName__text'
+        name="houseName"
+        id="houseName"
         onChange={handleChange}
         value={selectHouse}
       >
@@ -23,6 +23,7 @@ function FilterHouse({ handleSelectHouse, selectHouse, setSelectHouse}) {
         <option value="Ravenclaw">Ravenclaw </option>
         <option value="Hufflepuff">Hufflepuff</option>
       </select>
+      </label>
     </>
   );
 }

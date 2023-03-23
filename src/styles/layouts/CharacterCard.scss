@@ -1,9 +1,6 @@
 .link {
     margin: 50px;
-    //background-color:#6C8495;
-    //border-radius: 5%;
 }
-
 
 .listCard {
     display: grid;
@@ -12,26 +9,71 @@
     background-color: #6C8495;
     border: 2px solid #EDB600;
     border-radius: 10px;
-    
+    margin-right: 50px;
 
-&__img {
-        width: 20rem;
-        height: 25rem;
+
+    &__img {
+        width: 30rem;
+        height: 35rem;
         padding-top: 20px;
         border-radius: 20px;
         background-color: #6C8495;
+    }
 
-        }
+
+    &__name {
+        font-weight: bold;
+        color: whitesmoke;
+        font-size: 20px;
+        background-color: #6C8495;
+        padding-top: 10px;
+        text-decoration: none;
+
+    }
+
+    &__species {
+        font-weight: bold;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 20px;
+        background-color: #6C8495;
+        padding-bottom: 10px;
+
+    }
+}
+
+
+@media all and (min-width: 1200px) {
+.link {
+    margin: 50px;   
+}
+
+.listCard {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6C8495;
+    border: 2px solid #EDB600;
+    border-radius: 10px;
+&__img {
+        width: 30rem;
+        height: 35rem;
+        padding-top: 20px;
+        border-radius: 20px;
+        background-color: #6C8495;
+    }
+    
+
   
 
 &__name {
         font-weight: bold;
-        text-decoration: none;
         color:whitesmoke;
         font-size: 20px;
         background-color: #6C8495;
         padding-top: 10px;
-        //font-family: $fontFamily;
+        text-decoration: none;
+       
     }
 
 &__species {
@@ -41,6 +83,7 @@
         font-size: 20px;
         background-color: #6C8495;
         padding-bottom: 10px;
-        //font-family: $fontFamily;
+             
     }
+}
 }

@@ -4,23 +4,23 @@ import '../styles/layouts/characterList.scss';
 
 function CharacterList({ characterList, searchName }) {
   //const renderList =()=>{
-    let dataHtml = characterList.map((eachCharacter) => {
+    let renderList = characterList.map((eachCharacter) => {
     return <CharacterCard eachCharacter={eachCharacter} key={eachCharacter.id} />;
   });
   
-  if (!dataHtml.length) {
-    let mesaggeError = "No hay ningún personaje que coincida con el nombre: ";
+  if (!renderList.length) {
+    let mesaggeError = "There is no character matching the name  ";
     mesaggeError += searchName;
 
     return (
       <section>
-        <span className="text--error">{mesaggeError}</span>
+        <span className="text__error">{mesaggeError}</span>
       </section>
     );
   } else {
     return (
       <section className="list">
-        <ul className="list__eachCharacter">{dataHtml}</ul>
+        <ul className="list__eachCharacter">{renderList}</ul>
       </section>
     );
   }

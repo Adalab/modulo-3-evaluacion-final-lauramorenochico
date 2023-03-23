@@ -16,12 +16,12 @@ function Filters({handleSearchName, searchName, handleSelectHouse, selectHouse, 
       <form className="section__form" onSubmit={handleSubmit}>
         <FilterName handleSearchName={handleSearchName} searchName={searchName} />
         <FilterHouse handleSelectHouse={handleSelectHouse} selectHouse={selectHouse}/>
-       
-      </form>
+       </form>
      <input
           className="section__btn"
           type="button"
           value="¡Obliviate!"
+         
           onClick={handleResetData}
         />
     <img src={flagb} className='section__img2'/>

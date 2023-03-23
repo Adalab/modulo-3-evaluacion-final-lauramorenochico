@@ -3,10 +3,30 @@
     gap: 20px;
     background-color: #2F4858;
     padding-bottom: 200px;
+ 
+
+    &__eachCharacter {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        list-style: none;
+        margin-left: 100px;
+    }
+}
+
+
+@media all and (min-width: 1200px) {
+.list {
+    padding: 50px;
+    gap: 20px;
+    background-color: #2F4858;
+    padding-bottom: 200px;
+    margin-left: -80px;
 
     &__eachCharacter {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         list-style: none;
     }
+}
 }
