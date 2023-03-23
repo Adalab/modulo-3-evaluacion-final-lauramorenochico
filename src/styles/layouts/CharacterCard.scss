@@ -1,4 +1,4 @@
-.link {
+/*.link {
     margin: 50px;
 }
 
@@ -9,13 +9,13 @@
     background-color: #6C8495;
     border: 2px solid #EDB600;
     border-radius: 10px;
-    margin-right: 50px;
+    //margin-right: 50px;
 
 
     &__img {
-        width: 30rem;
-        height: 35rem;
-        padding-top: 20px;
+        width: 10rem;
+        height: 15rem;
+        //padding-top: 20px;
         border-radius: 20px;
         background-color: #6C8495;
     }
@@ -24,9 +24,10 @@
     &__name {
         font-weight: bold;
         color: whitesmoke;
-        font-size: 20px;
+        font-size: 10px;
         background-color: #6C8495;
         padding-top: 10px;
+        padding-left:5px;
         text-decoration: none;
 
     }
@@ -35,12 +36,13 @@
         font-weight: bold;
         text-decoration: none;
         color: whitesmoke;
-        font-size: 20px;
+        font-size: 10px;
+        padding-left: 5px;
         background-color: #6C8495;
         padding-bottom: 10px;
 
     }
-}
+}*/
 
 
 @media all and (min-width: 1200px) {
