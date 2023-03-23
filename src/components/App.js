@@ -2,12 +2,11 @@ import { useEffect, useState } from 'react';
 import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import getDataApi from '../services/api';
 import '../styles/App.scss';
-import '../styles/layouts/header.scss'
 import CharacterList from './CharacterList';
 import Filters from './Filters';
 import CharacterDetail from './CharacterDetail'; 
 import logo from '../images/logo.png'
-
+import Hoglog from '../images/Hoglog.png'
 
 
 
@@ -59,15 +58,20 @@ const handleResetData = () => {
   return(
        <div className='background'>
         <header className='header'>
-        <img src={logo} className='header'/>
+        <img src={Hoglog} className='header__crest'/>
+        <img src={logo} className='header__img'/>
+         <img src={Hoglog} className='header__crest'/>
         </header>
+
 
         <main className="main">
         <Routes>
           <Route path='/' 
             element={<>
               <Filters 
-              handleSelectHouse={handleSelectHouse}        selectHouse ={selectHouse}          
+              handleSelectHouse={handleSelectHouse}        
+              selectHouse ={selectHouse}  
+              setSelectHouse={selectHouse}       
               handleSearchName={handleSearchName}
               searchName={searchName} 
               handleResetData={handleResetData}/>

@@ -5,15 +5,15 @@ function CharacterCard({ eachCharacter }) {
   return (
     //<li className="li_Card">
       <Link className="link" to={"/character/" + eachCharacter.id}>
-        <li className="li">
+        <li className="listCard">
         <img
-          className="img"
+          className="listCard__img"
           src={eachCharacter.image}
           alt="Foto de personaje de Harry Potter"
           title="Foto de personaje de Harry Potter"
         ></img>
-        <h4 className="name">{eachCharacter.name}</h4>
-        <p className="species">{eachCharacter.species}</p>
+        <h4 className="listCard__name">{eachCharacter.name}</h4>
+        <p className="listCard__species">{eachCharacter.species}</p>
         
       </li>
       </Link>

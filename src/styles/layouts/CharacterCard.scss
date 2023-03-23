@@ -1,35 +1,46 @@
 .link {
     margin: 50px;
-    background-color: #2F4858;
-    border-radius: 5%;
+    //background-color:#6C8495;
+    //border-radius: 5%;
 }
 
 
-.li {
+.listCard {
     display: grid;
     flex-direction: column;
-    align-items: center;
-}
-.img {
+    justify-content: center;
+    background-color: #6C8495;
+    border: 2px solid #EDB600;
+    border-radius: 10px;
+    
+
+&__img {
         width: 20rem;
         height: 25rem;
         padding-top: 20px;
-        border-radius: 6px;
+        border-radius: 20px;
+        background-color: #6C8495;
+
         }
   
 
-.name {
+&__name {
         font-weight: bold;
         text-decoration: none;
         color:whitesmoke;
         font-size: 20px;
+        background-color: #6C8495;
+        padding-top: 10px;
         //font-family: $fontFamily;
     }
 
-.species {
+&__species {
         font-weight: bold;
         text-decoration: none;
         color: whitesmoke;
         font-size: 20px;
+        background-color: #6C8495;
+        padding-bottom: 10px;
         //font-family: $fontFamily;
     }
+}

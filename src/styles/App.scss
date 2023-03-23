@@ -1,6 +1,24 @@
-:root {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
+@import './core/reset.scss';
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-bottom: solid 4px #EDB600;
+   
+   &__crest{
+    width: 25%;
+    height: 25%;
+    margin-top: 40px;
+    //justify-content: flex-start;
+    }
+   &__img {
+        width: 50%;
+        height: 300px;
+        //display: flex;
+        //justify-content: center;
+        //transform: translateX(700px);
+   }  
+    }
 
