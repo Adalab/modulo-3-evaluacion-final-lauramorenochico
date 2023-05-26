@@ -1,29 +1,24 @@
-
-.characterName{
-        font-size: 2.8rem;
+.characterName {
+font-size: 2.8rem;
         font-weight: bold;
-        color: whitesmoke;
+        color: #FFFFFF;
         padding-left: 30px;
         display: flex;
-        flex-direction: row;            
+        flex-direction: row;
         align-items: center;
         width: 600px;
         margin-top: 50px;
-    
 
-&__text {
-    margin-left: 10px;
-        height: 30px;
-        width: 300px;
-        border-radius: 5%;
-        padding-left: 5px;
-        font-weight: lighter;
-        font-size: 2rem;
-        background-color: whitesmoke;
-        position: relative;
-        left: 85px;
-        text-decoration: none;
+        &__text {
+                margin-left: 10px;
+                height: 30px;
+                width: 300px;
+                padding-left: 5px;
+                font-weight: lighter;
+                font-size: 2rem;
+                background-color: #FFFFFF;
+                position: relative;
+                left: 85px;
+                text-decoration: none;
+        }
 }
-}
-
-
