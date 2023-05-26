@@ -49,4 +49,3 @@ You can filter by name or by house
   - Fixed image style
   - Fixed cards style
   - Added new typography
-  - Files were optimized
