@@ -1,13 +1,14 @@
-import CharacterCard from './CharacterCard';
-import '../styles/layouts/characterList.scss';
-
+import CharacterCard from "./CharacterCard";
+import "../styles/layouts/characterList.scss";
 
 function CharacterList({ characterList, searchName }) {
   //const renderList =()=>{
-    let renderList = characterList.map((eachCharacter) => {
-    return <CharacterCard eachCharacter={eachCharacter} key={eachCharacter.id} />;
+  let renderList = characterList.map((eachCharacter) => {
+    return (
+      <CharacterCard eachCharacter={eachCharacter} key={eachCharacter.id} />
+    );
   });
-  
+
   if (!renderList.length) {
     let mesaggeError = "There is no character matching the name  ";
     mesaggeError += searchName;

@@ -3,14 +3,14 @@ const getDataApi = (house) => {
     .then((response) => response.json())
     .then((data) => {
       const cleanData = data.map((eachCharacter) => {
-          return {
+        return {
           id: eachCharacter.id,
           name: eachCharacter.name,
           species: eachCharacter.species,
           house: eachCharacter.house,
-          image:  eachCharacter.image
-              ? eachCharacter.image
-              : `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2ZSJCrmgtfty39MRe6-TWfvtx0XBi2LY-Q&usqp=CAU`,
+          image: eachCharacter.image
+            ? eachCharacter.image
+            : `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2ZSJCrmgtfty39MRe6-TWfvtx0XBi2LY-Q&usqp=CAU`,
           alive: eachCharacter.alive,
           gender: eachCharacter.gender,
           patronus: eachCharacter.patronus,

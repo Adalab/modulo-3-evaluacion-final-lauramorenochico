@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './components/App';
-import {HashRouter} from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./components/App";
+import { HashRouter } from "react-router-dom";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
     <React.StrictMode>
@@ -12,5 +11,3 @@ root.render(
     </React.StrictMode>
   </HashRouter>
 );
-
-//coge todo lo que tiene App.js

@@ -1,5 +1,4 @@
-import '../styles/layouts/filterName.scss';
-
+import "../styles/layouts/filterName.scss";
 
 function FilterName({ handleSearchName, searchName }) {
   const handleFilter = (ev) => {
@@ -9,18 +8,19 @@ function FilterName({ handleSearchName, searchName }) {
 
   return (
     <>
-      <label htmlFor="character" className="characterName">Busca por personaje:
-          <input
-            className="characterName__text"
-            autoComplete="off"
-            type="search"
-            name="character"
-            placeholder="Ej. Hermione Granger"
-            value={searchName}
-            onChange={handleFilter}
+      <label htmlFor="character" className="characterName">
+        Busca por personaje:
+        <input
+          className="characterName__text"
+          autoComplete="off"
+          type="search"
+          name="character"
+          placeholder="Ej. Hermione Granger"
+          value={searchName}
+          onChange={handleFilter}
         />
       </label>
-    </> 
+    </>
   );
 }
 export default FilterName;
