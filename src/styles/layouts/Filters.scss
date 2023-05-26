@@ -1,0 +1,20 @@
+.section {
+    display: flex;
+    justify-content: center;
+
+    &__btn {
+        height: 70px;
+        border-radius: 12px;
+        padding: 10px 20px;
+        font-size: 26px;
+        background-color: #EDB600;
+        position: relative;
+        top: 300px;
+        left: -300px;
+        cursor: pointer;
+
+        &:active {
+            background-color: #C3C5C5;
+        }
+    }
+}
