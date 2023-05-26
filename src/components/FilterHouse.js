@@ -1,4 +1,4 @@
-import "../styles/layouts/filterHouse.scss";
+import "../styles/layouts/FilterHouse.scss";
 
 function FilterHouse({ handleSelectHouse, selectHouse, setSelectHouse }) {
   const handleChange = (ev) => {

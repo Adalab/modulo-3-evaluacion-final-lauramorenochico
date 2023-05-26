@@ -1,6 +1,6 @@
 import FilterName from "./FilterName";
 import FilterHouse from "./FilterHouse";
-import "../styles/layouts/filter.scss";
+import "../styles/layouts/Filter.scss";
 import flag from "../images/flag1.png";
 import flagb from "../images/flag3.png";
 

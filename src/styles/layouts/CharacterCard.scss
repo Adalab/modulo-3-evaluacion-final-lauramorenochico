@@ -1,43 +1,48 @@
-    .link {
-        width: calc(20% - 20px);
+.link {
+    width: calc(15% - 38.6px);
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+
+    @media screen and (max-width: 1200px) {
+        width: calc(20% - 38.6px);
     }
 
-    .listCard {
-        display: grid;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #6C8495;
-        border: 2px solid #EDB600;
-        border-radius: 10px;
+    @media screen and (max-width: 900px) {
+        width: calc(25% - 38.6px);
+    }
 
-        &__img {
-            width: 30rem;
-            height: 35rem;
-            padding-top: 20px;
-            border-radius: 20px;
-            background-color: #6C8495;
-        }
+    @media screen and (max-width: 600px) {
+        width: calc(33.33% - 38.6px);
+    }
+}
 
+.listCard {
+    background: rgb(4, 4, 20);
+    background: linear-gradient(142deg, rgba(4, 4, 20, 1) 0%, rgba(17, 17, 92, 1) 25%, rgba(6, 6, 22, 1) 50%, rgba(37, 32, 120, 1) 75%, rgba(6, 6, 22, 1) 100%);
+    border: 2px solid #EDB600;
+    border-radius: 12px;
+    overflow: hidden;
 
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 9/11;
+        border-radius: 9px 9px 0 0;
+        transition: all 350ms ease;
 
-
-        &__name {
-            font-weight: bold;
-            color: whitesmoke;
-            font-size: 20px;
-            background-color: #6C8495;
-            padding-top: 10px;
-            text-decoration: none;
-
-        }
-
-        &__species {
-            font-weight: bold;
-            text-decoration: none;
-            color: whitesmoke;
-            font-size: 20px;
-            background-color: #6C8495;
-            padding-bottom: 10px;
-
+        &:hover {
+            transform: scale(1.05);
         }
     }
+
+    &__name {
+        font-size: 20px;
+        padding: 15px 0 5px 0;
+    }
+
+    &__species {
+        font-size: 16px;
+        padding: 10px 0 15px 0;
+    }
+}

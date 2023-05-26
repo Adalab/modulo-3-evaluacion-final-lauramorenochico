@@ -48,3 +48,5 @@ You can filter by name or by house
   - Update README.md
   - Fixed image style
   - Fixed cards style
+  - Added new typography
+  - Files were optimized

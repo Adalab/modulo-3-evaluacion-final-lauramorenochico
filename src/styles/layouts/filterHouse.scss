@@ -1,36 +1,6 @@
- /* 
 .houseName {
-    font-size:10px;
-    font-weight: bold;
-    color: whitesmoke;
-    padding-left: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    margin-top: 50px;
-    
-
-    &__text {
-        margin-left: 10px;
-        height: 30px;
-        width: 300px;
-        border-radius: 5%;
-        padding-left: 5px;
-        font-size: 2rem;
-        background-color: whitesmoke;
-        position: relative;
-        left: 120px;
-        text-decoration: none;
-
-    }
-}*/
-
-@media all and (min-width: 1200px){
-.houseName {
-font-size: 2.8rem;
-    font-weight: bold;
-    color: whitesmoke;
+    font-size: 2.8rem;
+    color: #FFFFFF;
     padding-left: 30px;
     display: flex;
     flex-direction: row;
@@ -38,18 +8,14 @@ font-size: 2.8rem;
     width: 600px;
     margin-top: 50px;
 
-&__text {
-    margin-left: 10px;
+    &__text {
+        margin-left: 10px;
         height: 30px;
-        width: 300px;
-        border-radius: 5%;
+        width: 300px;;
         padding-left: 5px;
         font-size: 2rem;
-        background-color: whitesmoke;
+        background-color: #FFFFFF;
         position: relative;
         left: 120px;
-        text-decoration: none;
-        
     }
-}
 }

@@ -1,5 +1,5 @@
 import CharacterCard from "./CharacterCard";
-import "../styles/layouts/characterList.scss";
+import "../styles/layouts/CharacterList.scss";
 
 function CharacterList({ characterList, searchName }) {
   //const renderList =()=>{
@@ -20,7 +20,7 @@ function CharacterList({ characterList, searchName }) {
     );
   } else {
     return (
-      <section className="list">
+      <section id="list">
         <ul className="list__eachCharacter">{renderList}</ul>
       </section>
     );

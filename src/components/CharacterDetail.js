@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/layouts/characterDetail.scss";
+import "../styles/layouts/CharacterDetail.scss";
 
 function CharacterDetail({ characterFind }) {
   if (characterFind !== undefined) {
