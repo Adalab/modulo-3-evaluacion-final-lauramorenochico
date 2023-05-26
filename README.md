@@ -28,6 +28,20 @@ You can filter by name or by house
 - JavaScript
 - React
 
+## Getting Started 🚀
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone
+    ```
+2. Install NPM packages
+3. Start the project
+   ```sh
+   npm start
+   ```
+
 ## Contribuitors: 🤝
 
 - Mariano Álvarez [Github profile](https://github.com/creativoma)
